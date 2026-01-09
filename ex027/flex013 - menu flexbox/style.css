@@ -18,6 +18,12 @@ header {
     background-color: #CEBFD9;
     color: #8F6DA6;
     padding: 15px;
+
+    
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
 }
 
 main {
@@ -27,10 +33,30 @@ main {
     padding: 15px;
     border-radius: 15px;
     box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.432);
+} 
+
+header > nav {
+    display: flex;
+    flex-flow: row wrap;
 }
 
-a {
+header > nav > a {
     text-decoration: none;
+    text-align: center;
     color: #F1F0F2;
+    background-color: #B099BF;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 10px;
 }
 
+header > nav > a:hover {
+    background-color: #F1F0F2;
+    color: #B099BF;
+    transition: background-color .3s;
+}
+
+header > h1 {
+    flex: 0 0 200px;
+    text-shadow: 1px 1px 0px rgba(255, 255, 255, 0.267);
+}
